@@ -14,6 +14,12 @@
 		E3ECC0A017AA883C00ADEC5D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E3ECC09F17AA883C00ADEC5D /* AppDelegate.m */; };
 		E3ECC0A317AA883C00ADEC5D /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3ECC0A117AA883C00ADEC5D /* MainMenu.xib */; };
 		E3ECC0A617AA883C00ADEC5D /* StandaloneRubyTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E3ECC0A417AA883C00ADEC5D /* StandaloneRubyTest.xcdatamodeld */; };
+		E3ECC0AD17AA88B400ADEC5D /* miniruby in Resources */ = {isa = PBXBuildFile; fileRef = E3ECC0AC17AA88B400ADEC5D /* miniruby */; };
+		E3ECC0B017AAA22000ADEC5D /* RubyRunner.m in Sources */ = {isa = PBXBuildFile; fileRef = E3ECC0AF17AAA22000ADEC5D /* RubyRunner.m */; };
+		E3ECC0B217AAADE700ADEC5D /* wrapper.rb in Resources */ = {isa = PBXBuildFile; fileRef = E3ECC0B117AAADE700ADEC5D /* wrapper.rb */; };
+		E3ECC0B617AAB28800ADEC5D /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3ECC0B417AAB28800ADEC5D /* MasterViewController.m */; };
+		E3ECC0B717AAB28800ADEC5D /* MasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3ECC0B517AAB28800ADEC5D /* MasterViewController.xib */; };
+		E3ECC0B917AADAFF00ADEC5D /* Andale Mono.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E3ECC0B817AADAFF00ADEC5D /* Andale Mono.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +37,14 @@
 		E3ECC09F17AA883C00ADEC5D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		E3ECC0A217AA883C00ADEC5D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		E3ECC0A517AA883C00ADEC5D /* StandaloneRubyTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StandaloneRubyTest.xcdatamodel; sourceTree = "<group>"; };
+		E3ECC0AC17AA88B400ADEC5D /* miniruby */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = miniruby; sourceTree = "<group>"; };
+		E3ECC0AE17AAA22000ADEC5D /* RubyRunner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RubyRunner.h; sourceTree = "<group>"; };
+		E3ECC0AF17AAA22000ADEC5D /* RubyRunner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RubyRunner.m; sourceTree = "<group>"; };
+		E3ECC0B117AAADE700ADEC5D /* wrapper.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = wrapper.rb; sourceTree = "<group>"; };
+		E3ECC0B317AAB28800ADEC5D /* MasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		E3ECC0B417AAB28800ADEC5D /* MasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		E3ECC0B517AAB28800ADEC5D /* MasterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MasterViewController.xib; sourceTree = "<group>"; };
+		E3ECC0B817AADAFF00ADEC5D /* Andale Mono.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Andale Mono.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +103,11 @@
 				E3ECC0A117AA883C00ADEC5D /* MainMenu.xib */,
 				E3ECC0A417AA883C00ADEC5D /* StandaloneRubyTest.xcdatamodeld */,
 				E3ECC09317AA883C00ADEC5D /* Supporting Files */,
+				E3ECC0AE17AAA22000ADEC5D /* RubyRunner.h */,
+				E3ECC0AF17AAA22000ADEC5D /* RubyRunner.m */,
+				E3ECC0B317AAB28800ADEC5D /* MasterViewController.h */,
+				E3ECC0B417AAB28800ADEC5D /* MasterViewController.m */,
+				E3ECC0B517AAB28800ADEC5D /* MasterViewController.xib */,
 			);
 			path = StandaloneRubyTest;
 			sourceTree = "<group>";
@@ -96,11 +115,14 @@
 		E3ECC09317AA883C00ADEC5D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E3ECC0B817AADAFF00ADEC5D /* Andale Mono.ttf */,
+				E3ECC0AC17AA88B400ADEC5D /* miniruby */,
 				E3ECC09417AA883C00ADEC5D /* StandaloneRubyTest-Info.plist */,
 				E3ECC09517AA883C00ADEC5D /* InfoPlist.strings */,
 				E3ECC09817AA883C00ADEC5D /* main.m */,
 				E3ECC09A17AA883C00ADEC5D /* StandaloneRubyTest-Prefix.pch */,
 				E3ECC09B17AA883C00ADEC5D /* Credits.rtf */,
+				E3ECC0B117AAADE700ADEC5D /* wrapper.rb */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -159,6 +181,10 @@
 				E3ECC09717AA883C00ADEC5D /* InfoPlist.strings in Resources */,
 				E3ECC09D17AA883C00ADEC5D /* Credits.rtf in Resources */,
 				E3ECC0A317AA883C00ADEC5D /* MainMenu.xib in Resources */,
+				E3ECC0AD17AA88B400ADEC5D /* miniruby in Resources */,
+				E3ECC0B217AAADE700ADEC5D /* wrapper.rb in Resources */,
+				E3ECC0B717AAB28800ADEC5D /* MasterViewController.xib in Resources */,
+				E3ECC0B917AADAFF00ADEC5D /* Andale Mono.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,6 +198,8 @@
 				E3ECC09917AA883C00ADEC5D /* main.m in Sources */,
 				E3ECC0A017AA883C00ADEC5D /* AppDelegate.m in Sources */,
 				E3ECC0A617AA883C00ADEC5D /* StandaloneRubyTest.xcdatamodeld in Sources */,
+				E3ECC0B017AAA22000ADEC5D /* RubyRunner.m in Sources */,
+				E3ECC0B617AAB28800ADEC5D /* MasterViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "RubyRunner.h"
+
 
 @implementation AppDelegate
 
@@ -16,8 +18,23 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    // Insert code here to initialize your application
+    NSSize windowSize = NSSizeFromCGSize(CGSizeMake(640, 480));
+    
+    [self.window setFrame:CGRectMake(300, 300, 640, 480) display:YES];
+    
+    [self.window setMaxSize:windowSize];
+    [self.window setMinSize:windowSize];
+    
+    
+    self.masterViewController = [[MasterViewController alloc] initWithNibName:@"MasterViewController" bundle:nil];
+    
+    
+    [self.window setContentView:self.masterViewController.view];
+
+    
+    //self.masterViewController.view.frame = ((NSView*)self.window.contentView).bounds;
 }
+
 
 // Returns the directory the application uses to store the Core Data store file. This code uses a directory named "com.superdamage.StandaloneRubyTest" in the user's Application Support directory.
 - (NSURL *)applicationFilesDirectory
