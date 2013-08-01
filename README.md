@@ -3,6 +3,4 @@ StandaloneRubyApp
 
 cocoa mac app with stanalone ruby runtime 
 
-StandaloneRubyApp
-=================
-[example link](http://example.com/).
+[Download Binary](https://github.com/eralpkaraduman/StandaloneRubyApp/raw/master/bin/StandaloneRubyTest.zip).
